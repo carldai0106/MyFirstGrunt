@@ -1,0 +1,29 @@
+body{
+	font-size:1.2em;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+@color: #4D926F;
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+#header {
+    color: @color;
+    .rounded-corners;
+}
+h2 {
+    color: @color;
+     .rounded-corners(10px);
+}
